@@ -7,6 +7,14 @@ export const turboIntegrations = {
     imgLight: '/integrations/siwe.svg',
     imgDark: '/integrations/siwe.svg',
   },
+  paymaster: {
+    name: 'Paymaster',
+    href: '/Pages/_app.js',
+    url: 'https://portal.zksync.io/',
+    description: 'ZKSync Era Paymaster Starter UI',
+    imgLight: '/integrations/zksync.jpg',
+    imgDark: '/integrations/zksynclogo.png',
+  },
   erc20: {
     name: 'ERC20',
     href: '/integration/erc20',

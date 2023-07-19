@@ -79,7 +79,7 @@ export default function Home() {
                 <p>Join us on Discord</p>
               </a>
             </motion.div>
-            <span className="tag mt-6">⚡️TurboETH is in active development.</span>
+            <span className="tag mt-6">⚡️ZKSync Scaffoldera is in active development.</span>
           </motion.div>
 
           <div className="mt-10">
@@ -146,6 +146,16 @@ const features = [
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="Disco logo" className="rounded-full" height={100} src="/integrations/disco.jpeg" width={100} />
+      </div>
+    ),
+  },
+  {
+    title: "Paymaster",
+    description: "ZKSync Era Paymaster Starter UI",
+    href: turboIntegrations.paymaster.href,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="Disco logo" className="rounded-full" height={100} src="/integrations/zksync.jpg" width={100} />
       </div>
     ),
   },

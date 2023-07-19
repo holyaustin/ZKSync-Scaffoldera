@@ -7,15 +7,15 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // load contract artifact. Make sure to compile first!
-import * as ContractArtifact from "../artifacts-zk/contracts/Greeter.sol/Greeter.json";
+import * as ContractArtifact from "../artifacts-zk/contracts/utils/Greeter.sol/Greeter.json";
 
 const PRIVATE_KEY = process.env.WALLET_PRIVATE_KEY || "";
 
 if (!PRIVATE_KEY)
   throw "⛔️ Private key not detected! Add it to the .env file!";
 
-// Address of the contract on zksync testnet
-const CONTRACT_ADDRESS = "";
+// Address of the Greeter contract on zksync testnet
+const CONTRACT_ADDRESS = "0x2Ed7c1c3c717a08b2FaD8De3d0ac61d977b65c67";
 
 if (!CONTRACT_ADDRESS) throw "⛔️ Contract address not provided";
 
@@ -28,11 +28,11 @@ export default async function (hre: HardhatRuntimeEnvironment) {
   const provider = new Provider(hre.userConfig.networks?.zkSyncTestnet?.url);
   const signer = new ethers.Wallet(PRIVATE_KEY, provider);
 
-  // Initialize contract instance
+  // Initialise contract instance
   const contract = new ethers.Contract(
     CONTRACT_ADDRESS,
     ContractArtifact.abi,
-    signer
+    signer,
   );
 
   // Read message from contract

@@ -9,7 +9,7 @@ dotenv.config();
 // load wallet private key from env file
 const PRIVATE_KEY = process.env.WALLET_PRIVATE_KEY || "";
 // We will mint the NFTs to this address
-const RECIPIENT_ADDRESS = "RECIPIENT_ADDRESS";
+const RECIPIENT_ADDRESS = "0xa6D6f4556B022c0C7051d62E071c0ACecE5a1228";
 
 if (!PRIVATE_KEY)
   throw "⛔️ Private key not detected! Add it to the .env file!";
