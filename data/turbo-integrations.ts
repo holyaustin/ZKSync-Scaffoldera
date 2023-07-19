@@ -9,7 +9,7 @@ export const turboIntegrations = {
   },
   paymaster: {
     name: 'Paymaster',
-    href: '/Pages/_app.js',
+    href: '/Pages/index',
     url: 'https://portal.zksync.io/',
     description: 'ZKSync Era Paymaster Starter UI',
     imgLight: '/integrations/zksync.jpg',

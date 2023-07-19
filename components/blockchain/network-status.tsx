@@ -23,7 +23,7 @@ export function NetworkStatus({ className, ...props }: NetworkStatusProps) {
   return (
     <div className={classes} {...props}>
       <span className={classesBadge}>
-        <span className="px-1">{network.chain?.name ?? 'Ethereum'}</span>
+        <span className="px-1">{network.chain?.name ?? 'zkSyncTestnet'}</span>
       </span>
       {explorerUrl && (
         <LinkComponent className="mx-3 text-2xs dark:hover:text-gray-200" href={explorerUrl}>
